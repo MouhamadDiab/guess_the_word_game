@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.page{
+    height: 100vh;
+    background-color: #5e63ba;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page .container{
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    width: 800px;
+    justify-content: space-around;
+}
+
+.page .container .left{
+
+}
+.page .container .left p{
+    font-size: 25px;
+    font-weight: bold;
+    font-style: oblique;
+    text-decoration: underline;
+}
+.page .container .left .incorrect span{
+    color: red;
+}
+
+.page .container .left .content{
+    width: 100px;
+    height: 145px;
+    margin-top: 25px;
+    transform: translateX(45px);
+    border-left: 2px solid transparent;
+    border-top: 2px solid transparent;
+    position: relative;
+}
+.page .container .left .content .one{
+    position: absolute;
+    bottom: 0;
+    width: 180%;
+    height: 2px;
+    /* background-color: black; */
+    left: 0%;
+    transform: translateX(-50%);
+}
+
+.page .container .left .content .four{
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* background-color: black; */
+    height: 30px;
+    width: 2px;
+
+}
+.page .container .left .content .five{
+    position: absolute;
+    top: 25px;
+    right: -17px;
+    display: none;
+}
+.page .container .left .content .five img{
+    height: 80px;
+}
+
+.page .container .right{
+    text-align: center;
+}
+
+.page .container .right h1{
+    text-align: center;
+    color: coral;
+}
+
+.page .container .right form{
+    margin-top: 10px;
+}
+.page .container .right form input{
+    width: 35px;
+    padding: 5px;
+    font-size: 25px;
+    background-color: #eee;
+}
+.page .container .right .buttons{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 5px;
+    width: 400px;
+}
+
+.page .container .right .buttons >button{
+    font-size: 20px;
+    padding: 5px;
+    background: #9194d0;
+    color: white;
+}
+
+.page .container .right .buttons >button:hover{
+    background-color: blue;
+    cursor:pointer;
+}
